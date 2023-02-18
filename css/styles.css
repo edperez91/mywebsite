@@ -6,8 +6,24 @@
 
 body {
   margin: 0;
-  background: #595A56;
+  background: #ffffff;
   font-family: 'Boska-Regular';
+}
+
+nav{
+  display: flex;
+  text-align: center;
+  font-family: 'Boska-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 1em;
+  justify-content: space-between;
+}
+
+a:hover {
+  color: #30302f;
 }
 
 figure {
@@ -26,6 +42,10 @@ img {
   padding: 2rem;
   max-width: calc(var(--content-width) - 4rem);
   font-family: 'Boska-Bold';
+  width: 100%;
+  min-height: 80px;
+  top: 0px;
+  position:fixed;
 }
 
 .main {
