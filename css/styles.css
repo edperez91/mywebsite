@@ -6,21 +6,13 @@
 
 body {
   margin: 0;
-  background: #ffffff;
+  background: rgb(255,255,255);
+  background: rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%;
   font-family: 'Boska-Regular';
+  display: flex;
+  flex-direction: column;
 }
 
-nav{
-  display: flex;
-  text-align: center;
-  font-family: 'Boska-Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
-  margin: 1em;
-  justify-content: space-between;
-}
 
 a:hover {
   color: #30302f;
@@ -28,36 +20,25 @@ a:hover {
 
 figure {
   margin: 0;
+ 
 }
 
 img {
-  display: block;
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:  auto;
+  margin-top: 1.5rem;
+  max-width: 50%;
   height: auto;
 }
 
-.header {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 2rem;
-  max-width: calc(var(--content-width) - 4rem);
-  font-family: 'Boska-Bold';
-  width: 100%;
-  min-height: 80px;
-  top: 0px;
-  position:fixed;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-}
 
 .card {
-  width: clamp(20ch, 50%, var(--content-width));
+  width: clamp(15ch, 30%, var(--content-width));
   margin: 2rem;
   border: 0.5rem solid #C1C6CF;
   background: whitesmoke;
+  position: fixed;
 }
 
 .card figcaption {
@@ -86,9 +67,31 @@ align-self: center;
 
 h3 {
   font-family: 'Boska-Bold';
+  margin-bottom: 0px;
 }
 
-h1 {
-  color: white;
-
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
+
+#gallery {
+  line-height:0;
+  -webkit-column-count:5; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:5;
+  -moz-column-gap:5px;
+  column-count:5;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+}
+
+
